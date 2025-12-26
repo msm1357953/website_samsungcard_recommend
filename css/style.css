@@ -582,14 +582,19 @@ body {
         height: 18px;
     }
 
+    /* 모바일에서도 카드 이미지 크기 유지 */
     .card-image {
-        min-height: 100px;
-        padding: 16px;
+        min-height: 150px;
+        width: 140px;
+        min-width: 140px;
+        padding: 12px;
     }
 
     .card-image img {
-        max-width: 150px;
-        max-height: 90px;
+        width: 105px;
+        min-width: 105px;
+        max-width: 105px;
+        height: auto;
     }
 }
 
