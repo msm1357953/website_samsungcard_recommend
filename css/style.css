@@ -345,9 +345,8 @@ body {
 }
 
 .card-content {
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    gap: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .card-rank {
@@ -374,7 +373,9 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 140px;
+    width: 130px;
     min-width: 130px;
+    flex-shrink: 0;
 }
 
 .card-image img {
@@ -384,6 +385,7 @@ body {
     max-width: 95px;
     object-fit: contain;
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+    flex-shrink: 0;
 }
 
 .card-info {
