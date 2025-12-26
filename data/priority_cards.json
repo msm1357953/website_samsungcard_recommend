@@ -3,6 +3,81 @@
     "url": "https://card-search.naver.com/list?sortMethod=ri&ptn=1&bizType=CPC&companyCode=SS",
     "crawled_at": "2025-12-25 20:22:00",
     "total_cards": 49,
+    "card_colors": {
+        "_comment": "카드별 버튼 그라디언트 색상 (primary_color, secondary_color)",
+        "삼성카드 taptap O": {
+            "primary": "#e91e63",
+            "secondary": "#f48fb1"
+        },
+        "삼성 iD SELECT ALL 카드": {
+            "primary": "#1428a0",
+            "secondary": "#2d4de0"
+        },
+        "모니모카드": {
+            "primary": "#0096d6",
+            "secondary": "#00c3ff"
+        },
+        "네이버페이 taptap": {
+            "primary": "#03c75a",
+            "secondary": "#00e676"
+        },
+        "삼성 iD SIMPLE 카드": {
+            "primary": "#333333",
+            "secondary": "#666666"
+        },
+        "삼성 iD ENERGY 카드": {
+            "primary": "#f57c00",
+            "secondary": "#ffb74d"
+        },
+        "삼성 iD ON 카드": {
+            "primary": "#5c6bc0",
+            "secondary": "#9fa8da"
+        },
+        "삼성 iD PLUG-IN 카드": {
+            "primary": "#26a69a",
+            "secondary": "#80cbc4"
+        },
+        "삼성 iD ALL 카드": {
+            "primary": "#1428a0",
+            "secondary": "#2d4de0"
+        },
+        "삼성 iD GLOBAL 카드": {
+            "primary": "#1e3a5f",
+            "secondary": "#3d5a80"
+        },
+        "삼성 iD VITA 카드": {
+            "primary": "#ec407a",
+            "secondary": "#f48fb1"
+        },
+        "삼성 iD PET 카드": {
+            "primary": "#8d6e63",
+            "secondary": "#bcaaa4"
+        },
+        "taptap DRIVE": {
+            "primary": "#0277bd",
+            "secondary": "#4fc3f7"
+        },
+        "taptap DIGITAL": {
+            "primary": "#7c4dff",
+            "secondary": "#b388ff"
+        },
+        "taptap SHOPPING": {
+            "primary": "#ff5722",
+            "secondary": "#ff8a65"
+        },
+        "THE iD. PLATINUM (포인트)": {
+            "primary": "#424242",
+            "secondary": "#757575"
+        },
+        "신세계이마트 삼성카드 7": {
+            "primary": "#fbc02d",
+            "secondary": "#fff176"
+        },
+        "모니모A 카드": {
+            "primary": "#00bcd4",
+            "secondary": "#4dd0e1"
+        }
+    },
     "priority_cards": [
         {
             "rank": 1,
