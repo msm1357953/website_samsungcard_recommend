@@ -339,6 +339,24 @@ body {
     position: relative;
 }
 
+.card-tagline {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-light);
+    color: var(--primary);
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 10px;
+    z-index: 10;
+    white-space: nowrap;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .card-item:hover {
     box-shadow: var(--shadow-hover);
     transform: translateY(-2px);
@@ -350,23 +368,11 @@ body {
 }
 
 .card-rank {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    width: 22px;
-    height: 22px;
-    background: var(--primary);
-    color: white;
-    font-size: 11px;
-    font-weight: 700;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
+    display: none;
 }
 
 .card-image {
+    position: relative;
     padding: 12px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     display: flex;
