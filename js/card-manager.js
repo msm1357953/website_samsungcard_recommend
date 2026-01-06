@@ -18,16 +18,24 @@ class CardManager {
     }
 
     async loadCards() {
-        try {
-            const response = await fetch('data/samsung_cards.json');
-            const data = await response.json();
-            this.cards = data.cards;
+    try {
+        // 오프라인 호환성: 전역 변수에서 데이터 로드 (file:// 프로토콜 지원)
+        if (typeof SAMSUNG_CARDS_DATA !== 'undefined') {
+            this.cards = SAMSUNG_CARDS_DATA.cards;
             this.filteredCards = [...this.cards];
-            console.log(`${this.cards.length}개 카드 로드 완료`);
-        } catch (error) {
-            console.error('카드 데이터 로드 실패:', error);
+            console.log(`${this.cards.length}개 카드 로드 완료 (오프라인 모드)`);
+            return;
         }
+        // 폴백: fetch 사용 (웹서버 환경)
+        const response = await fetch('data/samsung_cards_updated.json');
+        const data = await response.json();
+        this.cards = data.cards;
+        this.filteredCards = [...this.cards];
+        console.log(`${this.cards.length}개 카드 로드 완료`);
+    } catch (error) {
+        console.error('카드 데이터 로드 실패:', error);
     }
+}    
 
     renderCards() {
         if (!this.cardGridElement) return;
